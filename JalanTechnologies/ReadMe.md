@@ -1,32 +1,42 @@
 # README
 
-This is a Java code package for a simple program that generates a bill for car services based on the type of vehicle and selected services. It includes classes for vehicles, services, and a billing system.
+This repository contains a Java code package for a simple car service billing system. The program allows users to select a car type and services, and generates a bill based on the selections. The code is organized into different packages and classes to achieve modularity and extensibility.
 
 ## Getting Started
 
 To run the program, follow these steps:
 
-1. Ensure you have Java installed on your machine.
-2. Clone the repository or download the code files.
+1. Make sure you have Java installed on your system.
+2. Clone this repository or download the code files.
 3. Open the code in your preferred Java development environment.
 4. Compile and run the `Driver` class.
 
 ## Code Structure
 
-The code package is structured as follows:
+The code package has the following structure:
 
 - **com.jalanTechnologies.oop** package:
-  - **Driver** class: The main class that contains the entry point for the program. It prompts the user to select a car type and services, and generates the bill accordingly.
-  - **Bill** class: Represents the bill generator. It takes a vehicle and a set of service codes, calculates the total bill, and generates the bill details.
+  - **Driver** class: Main entry point for the program. It prompts the user to select a car type and services, and generates the bill accordingly.
+  - **Bill** class: Generates the bill based on the selected car type and services.
 - **com.jalanTechnologies.oop.services** package:
-  - **Service** interface: Defines the contract for a service. It includes methods to get the service code and charge for different types of vehicles.
-  - Concrete service classes such as **BasicService**, **BrakeFixing**, **ClutchFixing**, **EngineFixing**, and **GearFixing** that implement the **Service** interface.
+  - **Service** interface: Defines the contract for a service. Includes methods to get the service code and charges for different car types.
+  - Concrete service classes such as **BasicService**, **BrakeFixing**, **ClutchFixing**, **EngineFixing**, and **GearFixing** implement the **Service** interface.
 - **com.jalanTechnologies.oop.vehicals** package:
-  - **Vehical** interface: Defines the contract for a vehicle. It includes a method to get the name of the vehicle.
-  - Concrete vehicle classes such as **HatchBack**, **Sedan**, and **SUV** that implement the **Vehical** interface.
+  - **Vehical** interface: Defines the contract for a vehicle. Includes a method to get the name of the vehicle.
+  - Concrete vehicle classes such as **HatchBack**, **Sedan**, and **SUV** implement the **Vehical** interface.
 
 ## Usage
 
 When you run the program, you will be prompted to select a car type (Hatchback, Sedan, or SUV) and choose services from the provided options. The program will calculate the total bill based on your selections and display the bill details.
 
-**Note:** The code provided here is just a sample implementation and does not include all possible services or vehicle types. You can extend the code and add more services or vehicle types as needed.
+## Contributing
+
+Contributions to this repository are welcome. If you encounter any issues or have suggestions for improvements, please create a pull request or submit an issue.
+
+## Acknowledgements
+
+This code package was developed as part of a programming exercise. Special thanks to the contributors who have helped improve the code.
+
+---
+
+Feel free to reach out if you have any questions or need further assistance.
